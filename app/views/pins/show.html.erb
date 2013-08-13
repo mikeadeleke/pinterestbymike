@@ -6,12 +6,13 @@
               <%= @pin.description %>
             </p>
             <p>
-              <%= @pin.user.name %>
+              <%= @pin.user_id %>
             </p>
             <% if current_user == @pin.user %>
                 <%= link_to 'Edit', edit_pin_path(@pin) %> |
-            <% end %>
+            <% else %>
             <%= link_to 'Back', pins_path %>
+            <% end %>
         </div>
     </div>
 </div>
