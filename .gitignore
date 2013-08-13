@@ -15,3 +15,5 @@
 /tmp
 # Ignore Paperclip uploaded files
 /public/system
+# Ignore sample_images
+/sample_images
